@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navigator from './components/Navigator'
-
+import Home from './pages/Home'
 const links: string[] = [
   'Info',
   'Register',
@@ -18,7 +17,9 @@ const App = () => {
         <Navigator links={links} />
         <div>
           <Switch>
-            <Route path="/"></Route>
+            <Route path="/">
+              <Home />
+            </Route>
             <Route path="/info"></Route>
             <Route path="/register"></Route>
             <Route path="/media"></Route>

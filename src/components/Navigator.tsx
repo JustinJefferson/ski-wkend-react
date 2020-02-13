@@ -13,7 +13,7 @@ const Navigator = (props: any) => {
                     </li>
                 )}
                 <li className="Logo">
-                    <Link className="Link" to="/">Home</Link>
+                    <Link className="Link" to="/">Maryland Fur Ski Weekend</Link>
                 </li>
             </ul>
         </div>
