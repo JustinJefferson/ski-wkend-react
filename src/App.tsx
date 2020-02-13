@@ -1,33 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navigator from './components/Navigator'
+import Home from './pages/Home'
+import Info from './pages/Info'
+const links: string[] = [
+  'Info',
+  'Register',
+  'Media',
+  'FAQ'
+]
 
 const App = () => {
   return (
     <div className="App">
       <Router>
         <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/info">Info</Link>
-            </li>
-            <li>
-              <Link to="/register">Register</Link>
-            </li>
-            <li>
-              <Link to="/media">Media</Link>
-            </li>
-            <li>
-              <Link to="/faq">FAQ</Link>
-            </li>
-          </ul>
+          <Navigator links={links} />
           <Switch>
-            <Route path="/"></Route>
-            <Route path="/info"></Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/info">
+              <Info />
+            </Route>
             <Route path="/register"></Route>
             <Route path="/media"></Route>
             <Route path="/faq"></Route>
