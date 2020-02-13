@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navigator from './components/Navigator'
 import Home from './pages/Home'
+import Info from './pages/Info'
 const links: string[] = [
   'Info',
   'Register',
@@ -14,13 +15,15 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Navigator links={links} />
         <div>
+          <Navigator links={links} />
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/info"></Route>
+            <Route path="/info">
+              <Info />
+            </Route>
             <Route path="/register"></Route>
             <Route path="/media"></Route>
             <Route path="/faq"></Route>

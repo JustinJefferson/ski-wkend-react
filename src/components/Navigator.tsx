@@ -5,7 +5,7 @@ import './Navigator.css';
 const Navigator = (props: any) => {
     const {links} = props;
     return (
-        <div>
+        <nav>
             <ul className="Nav">
                 {links.map((name: string) =>
                     <li className="Item">
@@ -16,7 +16,7 @@ const Navigator = (props: any) => {
                     <Link className="Link" to="/">Maryland Fur Ski Weekend</Link>
                 </li>
             </ul>
-        </div>
+        </nav>
     ) 
 }
 
