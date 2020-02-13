@@ -14,6 +14,15 @@ const Home = () => {
                     </p>
                 </div>
             </div>
+            <div className="Panelless">
+                <div className="Frame">
+                    <p>
+                        This is a panelless section. Similar to the panel section this displays text on the 
+                        screen, but with out the board. This section is good for giving detail or contrasting the 
+                        panel section.
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }
