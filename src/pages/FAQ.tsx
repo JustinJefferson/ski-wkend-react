@@ -1,5 +1,6 @@
 import React from 'react';
 import './FAQ.css';
+import { QA } from '../models/QA';
 
 const FAQ = () =>
     <div>
