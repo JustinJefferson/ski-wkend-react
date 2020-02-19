@@ -22,7 +22,7 @@ li a{
 }
 
 li a:hover{
-    background-color: blueviolet;
+    background-color: rgb(168, 0, 126);
     color: yellow;
 }
 
