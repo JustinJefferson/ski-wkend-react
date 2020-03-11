@@ -1,12 +1,13 @@
 import React from 'react';
-import './FAQ.css';
+// import './FAQ.css';
 import { QA, MockQAList } from '../models/QA';
+import Card from '../components/Card';
 
 const Display = (props: any) => {
-    const {item} = props;
+    const item: QA = props.item;
     return (
-        <div className="Card">
-            <div className="Card-top">
+        <div>
+            <div className="Card-top Color-yellow">
                 <h3 className="Question">Q: {item.question}</h3>
             </div>
             <div className="Card-bottom">
@@ -21,8 +22,19 @@ const FAQ = () => {
     return(
         <div>
             <h1>Frequently Asked Questions</h1>
+            <Card look='teal'>
+                <Display item={list[0]}></Display>
+            </Card>
+            <Card look='purple'>
+                <Display item={list[0]}></Display>
+            </Card>
+            <Card look='yellow'>
+                <Display item={list[0]}></Display>
+            </Card>
             {list.map((item: QA) => 
-                <Display item={item}></Display>
+                <Card look='white'>
+                    <Display item={item}></Display>
+                </Card>
             )}
         </div>
     )

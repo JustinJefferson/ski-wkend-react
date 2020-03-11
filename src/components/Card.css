@@ -6,7 +6,6 @@
     transition: 0.3s;
     width: 50%;
     border-radius: 5px;
-    background: whitesmoke;
 }
 
 .Card-top{
@@ -14,12 +13,31 @@
     border-top-right-radius: 5px;
     padding: 5px;
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.Card-bottom{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+.Color-white {
+    background: whitesmoke;
+    color: teal;
+}
+
+.Color-teal {
+    background: teal;
+    color: whitesmoke;
+}
+
+.Color-purple {
     background: rgb(168, 0, 126);
     color: yellow;
 }
 
-.Card-bottom{
-    padding: 10px;
-    text-align: left;
-    color: teal;
+.Color-yellow {
+    background: yellow;
+    color: rgb(168, 0, 126);
 }

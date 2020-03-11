@@ -1,0 +1,6 @@
+.Panel {
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    overflow-wrap: break-word;
+}
