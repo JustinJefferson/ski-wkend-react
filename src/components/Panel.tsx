@@ -6,7 +6,9 @@ const Panel = (props: any) => {
     const {children, look} = props;
     return (
         <div className='Panel' style={color(look)}>
-            {children}
+            <div className='Frame'>
+                {children}
+            </div>
         </div>
     )
 }

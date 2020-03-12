@@ -6,6 +6,7 @@ const Info = () =>
     <div>
         <Panel look='white'>
             <div>
+                <h2>Placeholder Title</h2>
                 <p>
                     This is a panel section. It displays text on a board that crosses the entire web page.
                     A good use for a section like this is to get peoples attention on a home page. It 
@@ -15,6 +16,7 @@ const Info = () =>
         </Panel>
         <Panel look='teal'>
             <div>
+                <h2>Placeholder Title</h2>
                 <p>
                     This is a panel section. It displays text on a board that crosses the entire web page.
                     A good use for a section like this is to get peoples attention on a home page. It 
@@ -24,6 +26,7 @@ const Info = () =>
         </Panel>
         <Panel look='purple'>
             <div>
+                <h2>Placeholder Title</h2>
                 <p>
                     This is a panel section. It displays text on a board that crosses the entire web page.
                     A good use for a section like this is to get peoples attention on a home page. It 
@@ -33,6 +36,7 @@ const Info = () =>
         </Panel>
         <Panel look='yellow'>
             <div>
+                <h2>Placeholder Title</h2>
                 <p>
                     This is a panel section. It displays text on a board that crosses the entire web page.
                     A good use for a section like this is to get peoples attention on a home page. It 
@@ -42,6 +46,7 @@ const Info = () =>
         </Panel>
         <Panel look='clear'>
             <div>
+                <h2>Placeholder Title</h2>
                 <p>
                     This is a panel section. It displays text on a board that crosses the entire web page.
                     A good use for a section like this is to get peoples attention on a home page. It 

@@ -7,7 +7,7 @@ const Display = (props: any) => {
     const item: QA = props.item;
     return (
         <div>
-            <div className="Card-top Color-yellow">
+            <div className="Card-top Color-purple">
                 <h3 className="Question">Q: {item.question}</h3>
             </div>
             <div className="Card-bottom">
