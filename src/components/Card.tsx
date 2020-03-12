@@ -5,7 +5,7 @@ const white = { background: 'whitesmoke', color: 'teal' };
 const teal = { background: 'teal', color: 'whitesmoke' };
 const purple = { background: 'rgb(168, 0, 126)', color: 'yellow' };
 const yellow = { background: 'yellow', color: 'rgb(168, 0, 126)' };
-const clear = { color: 'whitesmoke' }
+const clear = { background: 'none', color: 'whitesmoke' }
 
 export const color = (style: string) => {
     switch (style) {
